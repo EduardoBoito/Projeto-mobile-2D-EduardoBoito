@@ -13,6 +13,7 @@ export default function HomeScreen() {
         <Image
           source={require('@/assets/images/BoitoBank.png')}
           style={styles.reactLogo}
+        
         />
       }>
       <ThemedView style={styles.titleContainer}>
@@ -21,10 +22,18 @@ export default function HomeScreen() {
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Saldo: R$736,96</ThemedText>
-        <ThemedText type="defaultSemiBold">Área pix</ThemedText><ThemedText type="defaultSemiBold">
-          Pagar
-        </ThemedText>
-        <ThemedText type="defaultSemiBold">Pagar empréstimo</ThemedText>
+        <div>
+        <button>Área Pix</button>
+        <button>Transferir</button>
+        <button>Pagar empréstimo</button>
+        <button>Transferir</button>
+        <button>Depositar</button>
+        <button>Empréstimo</button>
+        </div>
+
+        <div>
+          <button>Meus cartões</button>
+          </div>
           {' '}
           <ThemedText type="defaultSemiBold">
             {Platform.select({
@@ -36,7 +45,7 @@ export default function HomeScreen() {
         </ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
+        <ThemedText type="subtitle"><button>Cartão de crédito</button></ThemedText>
         <ThemedText>
           Tap the Explore tab to learn more about what's included in this starter app.
         </ThemedText>
